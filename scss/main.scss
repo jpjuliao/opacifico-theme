@@ -1,0 +1,22 @@
+// Variables
+$raleway: "Raleway", sans-serif;
+$regular: 400;
+$medium: 500;
+$bold: 700;
+$main-blue: #00beb7;
+$main-green: #05ae8c;
+$main-yellow: #ffd200;
+$main-black: #000000;
+$main-gray: #707070;
+$main-white: #ffffff;
+$page-width: 1300px;
+
+// Partials
+@import 'mixins';
+@import 'normalize';
+@import 'bootstrap/bootstrap';
+@import 'blocks/blocks';
+@import 'header';
+@import 'footer';
+@import 'page';
+@import 'page-experiencias';

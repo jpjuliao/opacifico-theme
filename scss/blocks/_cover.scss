@@ -1,0 +1,17 @@
+&-cover {
+  margin: 0 !important;
+
+  &.wp-block-cover--large {
+    height: 600px;
+  }
+
+  p {
+    font-weight: $bold;
+    &.has-large-font-size {
+      line-height: 1.1;
+      @media (min-width: 769px) {
+        font-size: 61px;
+      }
+    }
+  }
+}

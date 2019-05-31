@@ -1,0 +1,10 @@
+.page .site-content .entry-content .wp-block {
+    @import "button";
+    @import "columns";
+    @import "cover";
+    @import "gallery";
+    @import "image";
+    @import "ub-tabbed-content";
+    @import "ub-image-slider";
+    @import "ugb-container";
+}

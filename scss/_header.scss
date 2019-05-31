@@ -1,0 +1,118 @@
+.site-header {
+  padding: 0;
+  .site-branding {
+    @media only screen and (min-width: 768px) {
+      margin: 0 auto;
+      max-width: 1300px;
+    }
+    .site-logo {
+      float: left;
+      margin-left: 10px;
+      margin-bottom: 0px;
+      @media only screen and (min-width: 768px) {
+        display: block;
+        left: 0;
+        float: left;
+        position: relative;
+        margin: 0 10px;
+      }
+      .custom-logo-link {
+        border-radius: initial;
+        @media only screen and (max-width: 768px) {
+          margin: 10px auto;
+          height: initial;
+          width: initial;
+          text-align: center;
+        }
+        @media only screen and (min-width: 768px) {
+          border-radius: inherit !important;
+          &:hover {
+            box-shadow: none;
+          }
+        }
+      }
+    }
+    .site-title,
+    .site-description {
+      display: none;
+    }
+    .main-navigation {
+      .sub-menu {
+        position: fixed;
+        opacity: 1;
+        left: 200%;
+        z-index: 99999;
+        top: 0;
+        right: initial;
+        bottom: 0;
+        width: 100vw;
+        transition: all 0.5s;
+        background: rgba($main-blue, 0.95);
+        > li.mobile-parent-nav-menu-item {
+          display: block;
+        }
+      }
+      margin-top: 0;
+      padding: 0;
+      display: flex !important;
+      justify-content: flex-end;
+      > .main-menu-more {
+        margin: auto 0;
+        // display: block;
+      }
+      .main-menu {
+        font-size: 12px;
+        > li.menu-item {
+          > a {
+            color: $main-gray !important;
+            letter-spacing: 1px;
+            padding: 30px 0px;
+            position: relative;
+            margin: 0 10px;
+            display: inline-block;
+            &::after {
+              display: none;
+              content: "";
+              left: 0;
+              position: absolute;
+              bottom: 0;
+              width: 100%;
+              height: 5px;
+              background: $main-yellow;
+            }
+            &:hover {
+              &::after {
+                display: block;
+              }
+            }
+          }
+          &.current-menu-item > a::after {
+            display: block;
+          }
+          > .main-menu-more-toggle {
+            color: $main-blue;
+            margin-right: 0.5rem;
+            margin-left: 0;
+          }
+          &.link--green > a {
+            background: $main-blue;
+            padding: 30px 15px;
+            margin: 0;
+            color: $main-white !important;
+            &::after {
+              content: none;
+            }
+            &:hover {
+              background: lighten($main-blue, 4%);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.admin-bar .main-navigation .sub-menu {
+  top: 46px;
+  height: calc(100vh - 46px);
+}

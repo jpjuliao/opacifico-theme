@@ -1,0 +1,209 @@
+.page .site-content {
+
+  .entry-header {
+    display: none;
+  }
+
+  .entry-content {
+
+    .wd-row {
+      margin: 0;
+    }
+
+    .vertical-align-center {
+      display: flex;
+      align-items: center;
+    }
+
+    .gallery {
+      &--5columns {
+        img {
+          width: 20%;
+          max-width: 193px;
+        }
+      }
+    }
+
+    .content-amenidades {
+      width: 85%;
+      margin: auto;
+      margin-top: 3em;
+      .wp-block-column {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        figure {
+          margin: 0 !important;
+          margin-right: 25px !important;
+        }
+        p {
+          font-weight: $bold;
+        }
+      }
+      &:nth-child(2) {
+        margin-bottom: 6em;
+      }
+    }
+
+    .room {
+      h3 {
+        font-size: 19px;
+      }
+      .wp-block-column:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+
+    .linea {
+      width: 80%;
+      margin: 5em auto 4em;
+      height: 3px;
+      background: #cccccc;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 3em auto !important;
+      input {
+        font-family: $raleway;
+        border-radius: 4px;
+        border: none;
+        &[type="email"] {
+          color: $main-black;
+          width: 100%;
+          background: #ebebeb;
+          margin-bottom: 2em;
+        }
+        &[type="submit"] {
+          background: $main-blue;
+          width: 200px;
+          font-size: 12px;
+          letter-spacing: 1.5px;
+          color: $main-white;
+        }
+      }
+    }
+
+    .activities-icons {
+      width: 100% !important;
+      position: relative !important;
+      .wp-block-column {
+        display: flex;
+        margin: 0 !important;
+        padding: 0 !important;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        cursor: pointer;
+        figure {
+          height: 100px;
+        }
+        p {
+          font-weight: $bold;
+          height: 60px;
+          display: flex;
+          color: $main-gray;
+          white-space: normal;
+          align-items: center;
+          justify-content: center;
+        }
+        &::after {
+          content: "";
+          width: 0;
+          display: none;
+          height: 0;
+          border-left: 5px solid transparent;
+          border-right: 5px solid transparent;
+          border-bottom: 10px solid #ffd200;
+          position: absolute;
+          bottom: -88px;
+        }
+        &:hover {
+          .wp-block-column::after {
+            display: block;
+          }
+        }
+      }
+    }
+
+    .parrafo-centrado {
+      width: 60%;
+      margin: auto;
+    }
+
+    .title-secondary {
+      padding-bottom: 2em;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      &::after {
+        content: "";
+        display: block;
+        width: 60px;
+        position: absolute;
+        height: 5px;
+        bottom: 30%;
+        background: $main-green;
+      }
+      &.title-secondary-2 {
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        padding-bottom: 1em;
+        &::after {
+          bottom: 0.3em;
+          left: -30px;
+        }
+      }
+      &.title-secondary-3 {
+        margin-left: 2em;
+      }
+    }
+
+    .list {
+      width: 80%;
+      margin: auto;
+      font-size: 16px !important;
+      margin-bottom: 4em;
+      font-weight: $medium;
+    }
+
+    .title-yellow {
+      color: $main-yellow;
+    }
+
+    .paragraph-strong {
+      margin-top: 1em;
+      font-weight: $bold;
+      strong {
+        color: $main-green;
+      }
+    }
+
+    .paragraph-margin {
+      margin: 5em auto;
+    }
+
+    .title-strong {
+      strong {
+        color: $main-yellow;
+      }
+    }
+
+    .btn-reserve {
+      a {
+        padding: 13px 40px !important;
+      }
+    }
+
+    .galery-rooms {
+      //   width: 70%;
+      margin: auto;
+      margin-bottom: 5em;
+    }
+  }
+}

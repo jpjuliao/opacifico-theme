@@ -1,0 +1,10 @@
+&-button .wp-block-button__link {
+  background: $main-blue;
+  font-family: $raleway;
+  font-size: 12px;
+  padding: 13px 18px;
+  letter-spacing: 1.5px;
+  &:hover {
+    background: darkness($main-blue);
+  }
+}

@@ -1,0 +1,16 @@
+&-ub-image-slider {
+
+    &.has-shadow {
+        > div {
+            @include shadow(); 
+        }
+    }
+    
+    .flickity-slider img {
+        max-width: initial;
+    }
+    
+    .flickity-page-dots {
+        bottom: 5px;
+    }
+}

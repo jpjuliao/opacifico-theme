@@ -1,0 +1,65 @@
+body {
+  font-family: $raleway;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  font-family: $raleway;
+}
+
+h1:not(.site-title):before,
+h2:before {
+  display: none;
+}
+
+h2 {
+  font-size: 42px;
+}
+
+p {
+  // line-height: 1.1em;
+  font-size: 16px;
+  font-weight: $medium;
+  letter-spacing: 1px;
+}
+
+.entry .entry-title::before {
+  display: none;
+}
+
+.entry .entry-content .wp-block-image .aligncenter {
+  width: initial;
+}
+
+@media only screen and (min-width: 768px) {
+
+  .entry .entry-header {
+    margin: 0;
+    padding: 0 60px;
+  }
+
+  .entry-content {
+    padding: 0;
+  }
+
+  .entry .entry-content > *,
+  .entry .entry-content > *.aligncenter,
+  .entry .entry-summary > * {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: $page-width;
+  }
+
+  .entry .entry-content,
+  .entry .entry-summary {
+    max-width: initial;
+    margin: 0;
+  }
+
+}

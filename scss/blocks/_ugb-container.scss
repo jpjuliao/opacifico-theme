@@ -1,0 +1,28 @@
+&-ugb-container {
+  &.wp-block-cover p {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .ugb-container__wrapper {
+    width: calc(100% - 70px);
+    max-width: $page-width;
+    margin: auto;
+  }
+  &.inner-full-width {
+    padding: 0;
+    width: initial;
+    left: initial;
+    max-width: initial;
+    height: initial;
+    @media only screen and (min-width: 768px) {
+      margin: 0 -60px !important;
+    }
+    .ugb-container__wrapper {
+      max-width: initial;
+      width: 100%;
+    }
+    .ugb-container__content-wrapper > .gmwd_container_wrapper {
+      margin-bottom: 0 !important;
+    }
+  }
+}

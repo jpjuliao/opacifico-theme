@@ -1,0 +1,97 @@
+.site-info{
+    display: none;
+}
+
+.widget-area{
+    width: 100%;
+    margin: 0 !important;
+    padding: 0;
+    .widget_custom_html{
+        width: 100% !important;
+        margin: 0 !important;
+    }
+    .footer{
+        background: $main-black;
+        color: $main-gray;
+        .container-footer{
+            width: 75%;
+            margin: auto;
+            padding: 2em 0;
+            .footer1,
+            .footer2{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .footer1{
+                margin-bottom: 2em; 
+                .social-icons{
+                    img{
+                        width: 20px;
+                        margin-left: 5px;
+                    }
+                }
+            }
+            .footer2{
+                display: flex;
+                a{
+                    color: $main-gray;
+                    margin-left: 16px;
+                    font-size: 16px !important;
+                    text-decoration: underline;
+                    &::nth-child(1){
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+.footer{
+    background: $main-black;
+    color: $main-gray;
+    .container-footer{
+        width: 75%;
+        margin: auto;
+        padding: 3em 0;
+        .footer1,
+        .footer2{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .footer1{
+            margin-bottom: 3em; 
+            .social-icons{
+                img{
+                    width: 20px;
+                    margin-left: 5px;
+                }
+            }
+        }
+        .footer2{
+            display: flex;
+            a{
+                color: $main-gray;
+                margin-left: 16px;
+                &::nth-child(1){
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 768px) {
+    .footer{
+        .container-footer{
+            .footer2{
+                flex-direction: column;
+                justify-content: center;
+                .copyright{
+                    font-size: 14px !important;
+                    line-height: 2em;
+                }
+            }
+        }
+    }
+}

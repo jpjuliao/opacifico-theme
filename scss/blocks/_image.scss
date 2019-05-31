@@ -1,0 +1,12 @@
+&-image {
+  .aligncenter {
+    margin: auto;
+  }
+  &.has-shadow,
+  &.has-shadow--yellow {
+    box-shadow: 10px 10px #ffd200;
+  }
+  &.has-shadow-inverse {
+    box-shadow: -10px 10px #ffd200;
+  }
+}
